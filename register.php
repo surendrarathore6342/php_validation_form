@@ -39,7 +39,7 @@ if(!isset($conditon)){
     $mobile_number = $_POST['mobile_number'];
     $password = $_POST['password'];
     
-    $sql = "INSERT INTO users (name, email, mobile_number, password) VALUES ('$name','$email','$mobile_number','$password')";
+    $sql = "INSERT INTO register_users (name, email, mobile_number, password) VALUES ('$name','$email','$mobile_number','$password')";
 
     if ($arr->query($sql) === TRUE) {
         header("Location: index.php");
